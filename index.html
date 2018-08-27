@@ -9,6 +9,60 @@
 <link rel="shortcut icon" href="cv_logo.ico">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #2196F3;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-right {
+  top: -5px;
+  left: 125%;  
+}
+
+.tooltip-right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #2196F3 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
 </style>
 <body class="w3-light-grey">
 
@@ -78,15 +132,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Expéricence professionnelle</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2017 - <span class="w3-tag w3-blue w3-round">Actuel</span></h6>
+          <h5 class="w3-opacity"><b>Service à la clientèle</b></h5>
+
+          <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right w3-text-blue"></i><span class="w3-text-blue">Jul 2017 - <span class="w3-tag w3-blue w3-round">Actuel</span></span> &nbsp;&nbsp; <span style="margin-left: 0.5em;" class="w3-opacity w3-text-blue">/</span> <div style="margin-left: 0.5em;" class="tooltip"><a href="https://www.google.ca/maps/place/3340+Boulevard+des+Sources,+Dollard-des-Ormeaux,+QC+H9B+1Z9/@45.4850869,-73.7931328,16z/data=!4m8!1m2!3m1!2sUltramar!3m4!1s0x4cc93cee7a37eedb:0xb141b2d25bed9734!8m2!3d45.4833451!4d-73.7966841" style="text-decoration: none;" target="_blank"><b class="w3-opacity w3-hover-text-blue"> Esso, 3340 des Sources, Dollard-des-Ormeaux <i style="margin-left: 0.5em;" class=" fa fa-map-marker w3-hover-text-blue"></i></b></a> <span class="tooltiptext /*tooltip-right*/">Voir sur google maps</span></div></h6>
+
+          <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right w3-text-blue"></i><span class="w3-text-blue">Jun 2016 - Mai 2017</span> <span style="margin-left: 0.5em;" class="w3-opacity w3-text-blue">/</span> <div style="margin-left: 0.5em;" class="tooltip"><a href="https://www.google.ca/maps/place/Ultramar/@45.4766723,-73.7903958,17.75z/data=!4m5!3m4!1s0x4cc93cfbc72767c1:0xd924d758f83823bb!8m2!3d45.4767759!4d-73.7903883" style="text-decoration: none;" target="_blank"><b class="w3-opacity w3-hover-text-blue">Ultramar, 2848 des Sources, Pointe-Claire<i style="margin-left: 3em;" class=" fa fa-map-marker w3-hover-text-blue"></i></b></a> <span class="tooltiptext /*tooltip-right*/">Voir sur google maps</span></div></h6>
+
           <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2016 - Mai 2017</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p><br>
         </div>
       </div>
 
